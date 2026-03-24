@@ -95,7 +95,7 @@ export const countriesData: CountryData[] = [
     name: "France",
     flag: "🇫🇷",
     heroTagline: "Prestigious Grandes Ecoles, cutting-edge research and a vibrant cultural capital",
-    heroImage: "/images/francee.png",
+    heroImage: "/images/france (1).png",
     whyTitle: "Where Culture Meets Academic Excellence",
     whyBody: [
       "France is home to some of the most prestigious universities and research institutions in the world. From the Grandes Ecoles to state universities with low or zero tuition, France offers an exceptional academic environment for ambitious African students.",
@@ -151,7 +151,7 @@ export const countriesData: CountryData[] = [
     name: "Austria",
     flag: "🇦🇹",
     heroTagline: "World-class education in the heart of Central Europe",
-    heroImage: "/images/austria.png",
+    heroImage: "/images/Austria (1).png",
     whyTitle: "Quality Living Meets Academic Prestige",
     whyBody: [
       "Austria combines outstanding academic institutions with an exceptional quality of life. Vienna consistently ranks among the most livable cities in the world, and its universities attract thousands of international students every year.",
@@ -262,7 +262,7 @@ export const countriesData: CountryData[] = [
     name: "Netherlands",
     flag: "🇳🇱",
     heroTagline: "High-ranked English-taught programs and a highly international community",
-    heroImage: "/images/netherlands.png",
+    heroImage: "/images/Netherlands (1).png",
     whyTitle: "Europe's Most International Study Destination",
     whyBody: [
       "The Netherlands hosts some of the highest-ranked English-taught bachelor's and master's programs in Europe. Cities like Amsterdam, Utrecht, and Eindhoven offer a dynamic, internationally minded environment that makes settling in relatively seamless for African students.",
@@ -317,7 +317,7 @@ export const countriesData: CountryData[] = [
     name: "Belgium",
     flag: "🇧🇪",
     heroTagline: "Multilingual, EU-connected, and home to excellent academic programs",
-    heroImage: "/images/belgium.png",
+    heroImage: "/images/Belgium (1).png",
     whyTitle: "At the Heart of Europe with Global Reach",
     whyBody: [
       "Belgium is a small but strategically powerful country at the center of Europe. As host to EU institutions and NATO headquarters, Belgium offers unmatched professional networking opportunities and a deeply international student community.",
@@ -372,7 +372,7 @@ export const countriesData: CountryData[] = [
     name: "Sweden",
     flag: "🇸🇪",
     heroTagline: "Innovation, sustainability, and world-class education in Scandinavia",
-    heroImage: "/images/sweden.png",
+    heroImage: "/images/Sweden (1).png",
     whyTitle: "A Progressive Society Built for International Talent",
     whyBody: [
       "Sweden is globally recognized for its commitment to innovation, sustainability, and inclusive education. Swedish universities consistently rank among the top in the world, and many programs are offered entirely in English, removing language barriers for international students.",
@@ -427,7 +427,7 @@ export const countriesData: CountryData[] = [
     name: "Spain",
     flag: "🇪🇸",
     heroTagline: "Quality of life, vibrant culture, and growing opportunities in Southern Europe",
-    heroImage: "/images/spain.png",
+    heroImage: "/images/Spain (1).png",
     whyTitle: "Sun, Culture, and a Gateway to Europe",
     whyBody: [
       "Spain offers an outstanding quality of life combined with an increasingly strong academic and professional landscape. With over 80 public universities, a warm climate, and a rich cultural heritage, Spain is a deeply rewarding destination for African students and workers.",
@@ -482,7 +482,7 @@ export const countriesData: CountryData[] = [
     name: "Finland",
     flag: "🇫🇮",
     heroTagline: "World-leading education system and a high quality of life in Northern Europe",
-    heroImage: "/images/german.png",
+    heroImage: "/images/Finland.png",
     whyTitle: "The World's Best Education System Awaits You",
     whyBody: [
       "Finland is consistently ranked as having the best education system in the world. Finnish universities emphasize critical thinking, innovation, and student wellbeing, producing graduates who are highly sought after globally.",
@@ -537,7 +537,7 @@ export const countriesData: CountryData[] = [
     name: "Switzerland",
     flag: "🇨🇭",
     heroTagline: "World-renowned education, political stability, and a high standard of living",
-    heroImage: "/images/uk.png",
+    heroImage: "/images/swiss.png",
     whyTitle: "Precision, Excellence, and Global Opportunity",
     whyBody: [
       "Switzerland is home to some of the most prestigious universities in the world, including ETH Zurich, consistently ranked in the global top 10. Swiss institutions are known for research excellence, innovation, and strong industry partnerships that give graduates a direct route into top-tier careers.",
@@ -592,7 +592,7 @@ export const countriesData: CountryData[] = [
     name: "Denmark",
     flag: "🇩🇰",
     heroTagline: "One of the world's happiest nations with top universities and a welcoming culture",
-    heroImage: "/images/france.png",
+    heroImage: "/images/Denmark.png",
     whyTitle: "Happiness, Innovation, and Academic Excellence",
     whyBody: [
       "Denmark consistently tops global rankings for happiness, quality of life, and work-life balance. Danish universities are internationally recognized for their research output and their emphasis on independent thinking and collaborative learning.",
@@ -647,7 +647,7 @@ export const countriesData: CountryData[] = [
     name: "Portugal",
     flag: "🇵🇹",
     heroTagline: "Affordable living, warm climate, and a growing tech and startup scene",
-    heroImage: "/images/spain.png",
+    heroImage: "/images/Portugal.png",
     whyTitle: "Europe's Most Accessible Gateway",
     whyBody: [
       "Portugal has emerged as one of the most attractive destinations in Europe for international students and professionals. With a low cost of living relative to Western Europe, a warm climate, and a welcoming population, Portugal offers an exceptional quality of life.",
