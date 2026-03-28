@@ -178,7 +178,7 @@ export default function AboutStorySection() {
         {/* ── Stats row ─────────────────────────────────────── */}
         <div
           ref={statsRef}
-          className="grid grid-cols-3 gap-6 pt-4"
+          className="grid lg:grid-cols-3 grid-cols-1 gap-6 pt-4"
         >
           {stats.map((stat) => {
             // Extract the numeric part for count-up, keep suffix separate

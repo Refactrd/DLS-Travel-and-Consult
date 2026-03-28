@@ -99,7 +99,7 @@ export default function ProgramsSection() {
       <div className="max-w-7xl mx-auto">
 
         {/* ── Top row ────────────────────────────────────────── */}
-        <div className="flex items-start justify-between gap-6 mb-12">
+        <div className="flex flex-col lg:flex-row items-start justify-between gap-6 mb-12">
 
           {/* Left — label + heading + subtext */}
           <div ref={headingGroupRef} className="max-w-2xl">
@@ -121,7 +121,7 @@ export default function ProgramsSection() {
           <Link
             ref={viewAllRef}
             href="/programs"
-            className="group flex-shrink-0 flex items-center gap-2 text-[#1818B1] font-semibold text-[15px] self-center hover:gap-3 transition-all duration-200"
+            className="group flex-shrink-0 lg:flex items-center gap-2 text-[#1818B1] font-semibold text-[15px] self-center hover:gap-3 transition-all duration-200 hidden"
           >
             View All Programs
             <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />

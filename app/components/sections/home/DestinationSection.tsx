@@ -102,7 +102,7 @@ export default function DestinationsSection() {
       <div className="max-w-7xl mx-auto">
 
         {/* ── Top Row: heading group (left) + See More (right) ── */}
-        <div className="flex items-start justify-between gap-6 mb-12">
+        <div className="flex flex-col lg:flex-row items-start justify-between gap-6 mb-12">
 
           {/* Left — label + heading + subtext */}
           <div ref={headingGroupRef} className="max-w-2xl">
@@ -129,7 +129,7 @@ export default function DestinationsSection() {
           <Link
             ref={seeMoreRef}
             href="/countries"
-            className="group flex-shrink-0 flex items-center gap-2 text-[#1818B1] font-semibold text-[15px] mt-2 hover:gap-3 transition-all duration-200 self-center"
+            className="group flex-shrink-0 lg:flex items-center gap-2 text-[#1818B1] font-semibold text-[15px] mt-2 hover:gap-3 transition-all duration-200 self-center hidden"
           >
             See More Countries
             <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
