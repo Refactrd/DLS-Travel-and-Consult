@@ -6,30 +6,30 @@ const differentiators = [
   {
     id: "honest",
     emoji: "🤝",
-    title: "Honest Guidance",
+    title: "Expertise You Can Trust",
     description:
-      "We never promise what we can't deliver. You'll always get our honest assessment of your case.",
+      "Our seasoned team ensures every travel, study, and relocation journey is seamless and professionally handled.",
   },
   {
     id: "language",
     emoji: "🏛️",
-    title: "Language-First Approach",
+    title: "Tailored Global Solutions",
     description:
-      "Our integrated language school means you train and apply with the same team. No outsourcing.",
+      "Personalized plans designed specifically around your goals and aspirations, making your international journey effortless.",
   },
   {
     id: "support",
     emoji: "📋",
-    title: "End-to-End Support",
+    title: "Proven Success",
     description:
-      "From first consultation to landing in Europe, we're with you. Including pre-departure orientation.",
+      "Hundreds of clients have achieved their dreams abroad with our guidance in Germany, France, Spain, and the Netherlands.",
   },
   {
     id: "compliance",
     emoji: "🔒",
-    title: "Compliance & Integrity",
+    title: "End-to-End Support",
     description:
-      "All our processes follow official embassy guidelines. We don't cut corners. Ever.",
+      "From visa applications to settling abroad, we manage all details so you can focus on your experience.",
   },
 ];
 

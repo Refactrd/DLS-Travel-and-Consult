@@ -71,8 +71,7 @@ export default function MissionVision() {
               <span>✦</span>
             </p>
             <blockquote className="font-display text-2xl sm:text-3xl md:text-[32px] font-bold text-gray-900 leading-[1.25]">
-              &ldquo;To make international education and migration accessible to
-              every ambitious African, regardless of background.&rdquo;
+             We aim to make global opportunities accessible, guiding individuals and families through every step of travel, study, and relocation.
             </blockquote>
           </div>
 
@@ -86,12 +85,12 @@ export default function MissionVision() {
           <div ref={rightRef} className="flex flex-col items-center text-center px-6 md:px-12 py-8">
             <p className="flex items-center gap-2 text-[#1818B1] text-xs font-bold uppercase mb-6">
               <span>✦</span>
-              Our Vision
+              Our Values
               <span>✦</span>
             </p>
             <p className="font-display text-2xl sm:text-3xl md:text-[32px] font-bold text-gray-900 leading-[1.25]">
-              A future where African talent moves freely across the world,
-              equipped, confident, and well-represented.
+              At DLS Travel and Consult, our values of integrity, excellence, and dedication guarantee an effortless, refined, and trustworthy experience for clients pursuing international opportunities
+
             </p>
           </div>
 

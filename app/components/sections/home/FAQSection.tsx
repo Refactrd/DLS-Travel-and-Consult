@@ -5,39 +5,33 @@ import { useEffect, useRef, useState } from "react";
 const faqs = [
   {
     id: 1,
-    question: "Do I need to speak German/French before applying?",
+    question: "What makes DLS Travel and Consult different?",
     answer:
-      "Not at all! That's part of our service. DLS runs a language school specifically to prepare clients before their visa application. Most programs require at least a B1 level, which we can help you achieve within 3—6 months.",
+      "We provide end-to-end, personalized guidance for travel, study, work, and relocation—turning complex processes into seamless, stress-free journeys.",
   },
   {
     id: 2,
-    question: "How long does the visa process take?",
+    question: "How do I begin my global journey with you?",
     answer:
-      "The timeline varies by country and program type. On average, the full process — from your first consultation to visa approval — takes between 3 to 9 months. We'll give you a realistic timeline specific to your situation from day one.",
+      "Simply schedule a consultation. Our experts craft a bespoke plan tailored to your personal goals, whether studying, working, or relocating abroad.",
   },
   {
     id: 3,
-    question: "What documents do I need?",
+    question: "Can you assist with student visas and applications?",
     answer:
-      "Requirements vary by program and destination country, but typically include a valid passport, proof of finances, language certificates, educational qualifications, and a motivation letter. We provide you with a personalised document checklist after your consultation.",
+      "Absolutely. From university selection to document preparation and visa approval, we ensure every step is handled professionally and efficiently.",
   },
   {
     id: 4,
-    question: "How much does DLS charge for her services?",
+    question: "Do you help with relocation and settling into a new country?",
     answer:
-      "Our fees depend on the program and level of support required. We offer transparent, fixed-fee packages with no hidden charges. Book a free consultation and we'll walk you through our pricing for your specific pathway.",
+      "Yes. We provide trusted support for housing, documentation, and integration, ensuring your move abroad is smooth.",
   },
   {
     id: 5,
-    question: "Can you help if my previous visa was rejected?",
+    question: "Which countries do you specialize in?",
     answer:
-      "Yes, absolutely. Many of our clients come to us after a rejection. We analyse what went wrong, address the gaps in your application, and build a stronger case before reapplying. A previous rejection does not disqualify you.",
-  },
-  {
-    id: 6,
-    question: "Is DLS only for Nigerian clients?",
-    answer:
-      "While our roots and primary focus are in Nigeria, we work with ambitious Africans across the continent. If you're based in Ghana, Kenya, South Africa, or elsewhere and are looking to move to Europe, we'd love to help.",
+      "We currently focus on Germany, France, Spain, and the Netherlands, offering expert, destination-specific guidance for study, work, and relocation.",
   },
 ];
 

@@ -5,21 +5,21 @@ import { useEffect, useRef } from "react";
 const steps = [
   {
     number: "01",
-    title: "Book a Consultation",
+    title: "Personalized Consultation and Assessment",
     description:
-      "Start with a free consultation. We assess your goals, background, and the best pathway available to you.",
+      "Connect with our experts to map your unique goals, study, work, or relocation, and receive a tailored plan crafted just for you.",
   },
   {
     number: "02",
-    title: "Build Your Profile",
+    title: "Expert Processing",
     description:
-      "We help you gather documents, complete language training, and build the strongest possible application.",
+      "We meticulously handle every detail of your application, visa, and documentation, ensuring a seamless process from start to approval.",
   },
   {
     number: "03",
-    title: "Arrive & Thrive",
+    title: "Travel & Ongoing Support",
     description:
-      "We guide you through visa approval, pre-departure prep, and provide support even after you've landed.",
+      "Step into your destination confidently, backed by our continuous guidance and support for a smooth, international experience",
   },
 ];
 

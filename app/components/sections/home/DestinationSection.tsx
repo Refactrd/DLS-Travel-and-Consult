@@ -8,30 +8,30 @@ const destinations = [
   {
     id: "germany",
     country: "Germany",
-    tagline: "Europe's economic powerhouse",
+    tagline: "Unlock Germany’s world-class opportunities and a high quality of life. From securing your visa to finding the right programs and opportunities, we make your move to Germany hassle-free.",
     image: "/images/germany.png",
     href: "/countries/germany",
   },
   {
     id: "france",
     country: "France",
-    tagline: "Culture, research and innovation",
+    tagline: "Our expert guidance ensures every step of your journey to France, where iconic culture, world-class education, and unforgettable lifestyle experiences await you is confidently handled ",
     image: "/images/france.png",
     href: "/countries/france",
   },
   {
     id: "spain",
     country: "Spain",
-    tagline: "Quality of life excellence",
+    tagline: "We simplify your travel and relocation to Spain, and help you discover the vibrant cities, and dynamic opportunities designed for personal growth and memorable adventures.",
     image: "/images/spain.png",
     href: "/countries/spain",
   },
   {
-    id: "uk",
-    country: "UK",
-    tagline: "Welcoming world-class education",
-    image: "/images/uk.png",
-    href: "/countries/uk",
+    id: "netherlands",
+    country: "Netherlands",
+    tagline: "With personalized guidance and proven expertise, we make moving to the Netherlands easy, letting you focus on your career, and global exploration ",
+    image: "/images/netherlands.png",
+    href: "/countries/netherlands",
   },
 ];
 

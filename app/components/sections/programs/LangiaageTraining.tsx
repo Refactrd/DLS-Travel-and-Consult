@@ -51,7 +51,7 @@ export default function LanguageTraining() {
         </p>
 
         <Link
-          href="/consultation"
+          href="https://dashlanguageschool.com.ng"
           className="group relative inline-flex items-center px-8 py-4 rounded-full text-white font-semibold text-[15px] overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-[#1818B1]/30 hover:-translate-y-0.5"
           style={{ background: "linear-gradient(135deg, #1818B1 0%, #0000FF 100%)" }}
         >

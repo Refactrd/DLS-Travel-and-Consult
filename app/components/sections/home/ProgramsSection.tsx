@@ -6,7 +6,7 @@ import Link from "next/link";
 const programs = [
   {
     id: "study",
-    title: "Study",
+    title: "Study Abroad Programs",
     description:
       "Pursue your academic goals in Europe. We handle documentation, language requirements, and university application support.",
     icon: <StudyIcon />,
@@ -14,17 +14,25 @@ const programs = [
   },
   {
     id: "training",
-    title: "Training",
+    title: "Work & Training Relocation",
     description:
-      "Gain professional experience abroad through recognised training programs in any Europe countries",
+      "Gain professional experience abroad through recognised training programs across European countries.",
     icon: <TrainingIcon />,
     href: "/programs/training",
   },
   {
-    id: "voluntary",
-    title: "Voluntary Service",
+    id: "travel",
+    title: "Short-Term Travel & Tours",
     description:
-      "Participate in voluntary service programmes while experiencing European culture firsthand.",
+      "Explore Europe on curated short-stay tours. We handle visas, itineraries, accommodation, and travel logistics end to end.",
+    icon: <TravelIcon />,
+    href: "/programs/travel",
+  },
+  {
+    id: "voluntary",
+    title: "Voluntary Service Programs",
+    description:
+      "Join recognised European voluntary service programs. Gain experience, earn a stipend, and build an international profile.",
     icon: <VoluntaryIcon />,
     href: "/programs/voluntary-service",
   },
@@ -84,7 +92,7 @@ export default function ProgramsSection() {
         });
         observer.disconnect();
       },
-      { threshold: 0.12 }
+      { threshold: 0.12 },
     );
 
     if (sectionRef.current) observer.observe(sectionRef.current);
@@ -97,11 +105,8 @@ export default function ProgramsSection() {
       className="w-full bg-white py-20 px-4 sm:px-6 lg:px-8"
     >
       <div className="max-w-7xl mx-auto">
-
-        {/* ── Top row ────────────────────────────────────────── */}
+        {/* Top row */}
         <div className="flex flex-col lg:flex-row items-start justify-between gap-6 mb-12">
-
-          {/* Left — label + heading + subtext */}
           <div ref={headingGroupRef} className="max-w-2xl">
             <p className="flex items-center gap-2 text-[#1818B1] text-xs font-bold uppercase mb-4">
               <span>✦</span>
@@ -112,12 +117,11 @@ export default function ProgramsSection() {
               Multiple Pathways to Europe
             </h2>
             <p className="text-gray-500 text-base leading-relaxed max-w-lg lg:max-w-xl">
-              Whether you&apos;re a student, a professional, or looking to reunite
-              with family, we have a structured program for you.
+              Whether you&apos;re a student, a professional, or looking to
+              reunite with family, we have a structured program for you.
             </p>
           </div>
 
-          {/* Right — View All Programs */}
           <Link
             ref={viewAllRef}
             href="/programs"
@@ -128,21 +132,29 @@ export default function ProgramsSection() {
           </Link>
         </div>
 
-        {/* ── Cards grid ─────────────────────────────────────── */}
-        <div
-          ref={cardsRef}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"
-        >
-          {programs.map((program) => (
-            <ProgramCard key={program.id} {...program} />
-          ))}
+        {/* Row 1 — 3 cards */}
+        <div ref={cardsRef} className="space-y-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <ProgramCard key="study" {...programs[0]} />
+            <ProgramCard key="training" {...programs[1]} />
+            <ProgramCard key="travel" {...programs[2]} />
+          </div>
+
+          {/* Row 2 — 2 cards, same width as row 1 cards, centred */}
+          <div className="flex justify-center gap-5">
+            <div className="w-full max-w-[calc(33.333%-10px)]">
+              <ProgramCard key="voluntary" {...programs[3]} />
+            </div>
+            <div className="w-full max-w-[calc(33.333%-10px)]">
+              <ProgramCard key="family" {...programs[4]} />
+            </div>
+          </div>
         </div>
       </div>
     </section>
   );
 }
 
-// ── Individual Card ──────────────────────────────────────────────
 interface ProgramCardProps {
   title: string;
   description: string;
@@ -158,33 +170,23 @@ function ProgramCard({ title, description, icon, href }: ProgramCardProps) {
         transition-all duration-300 cursor-pointer
         hover:border-[#1818B1] hover:shadow-[0_0_0_1px_#1818B1]"
     >
-      {/* Icon container */}
       <div className="w-12 h-12 rounded-xl bg-[#F5F6FF] flex items-center justify-center flex-shrink-0 transition-colors duration-300 group-hover:bg-[#AFAFFC]/30">
         {icon}
       </div>
-
-      {/* Text */}
       <div>
         <h3 className="font-display text-xl font-bold text-gray-900 mb-3">
           {title}
         </h3>
-        <p className="text-gray-500 text-base leading-relaxed">
-          {description}
-        </p>
+        <p className="text-gray-500 text-base leading-relaxed">{description}</p>
       </div>
     </Link>
   );
 }
 
-// ── Icons ────────────────────────────────────────────────────────
 function StudyIcon() {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-      <path
-        d="M12 3L2 8l10 5 10-5-10-5z"
-        fill="#1818B1"
-        opacity="0.85"
-      />
+      <path d="M12 3L2 8l10 5 10-5-10-5z" fill="#1818B1" opacity="0.85" />
       <path
         d="M2 8v6M6 10.5v5a6 6 0 0012 0v-5"
         stroke="#1818B1"
@@ -199,10 +201,45 @@ function StudyIcon() {
 function TrainingIcon() {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <rect
+        x="2"
+        y="7"
+        width="20"
+        height="14"
+        rx="2"
+        stroke="#7C3AED"
+        strokeWidth="1.8"
+      />
       <path
-        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5 2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35z"
-        fill="#7C3AED"
-        opacity="0.9"
+        d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"
+        stroke="#7C3AED"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+      />
+      <path
+        d="M12 12v3M10.5 13.5h3"
+        stroke="#7C3AED"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
+function TravelIcon() {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path
+        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
+        stroke="#0ea5e9"
+        strokeWidth="1.8"
+      />
+      <circle cx="12" cy="9" r="2.5" stroke="#0ea5e9" strokeWidth="1.8" />
+      <path
+        d="M6 20c-1.5.5-3 1-3 1h18s-1.5-.5-3-1"
+        stroke="#0ea5e9"
+        strokeWidth="1.5"
+        strokeLinecap="round"
       />
     </svg>
   );
@@ -226,13 +263,9 @@ function VoluntaryIcon() {
 function FamilyIcon() {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-      {/* Two adults */}
       <circle cx="8" cy="6" r="2.2" fill="#9B2C2C" opacity="0.85" />
       <circle cx="16" cy="6" r="2.2" fill="#9B2C2C" opacity="0.85" />
-      <circle cx="16" cy="6" r="2.2" fill="#9B2C2C" opacity="0.85" />
-      {/* Child */}
       <circle cx="12" cy="8" r="1.6" fill="#9B2C2C" opacity="0.6" />
-      {/* Body group */}
       <path
         d="M3 19c0-3 2-5 5-5h8c3 0 5 2 5 5"
         stroke="#9B2C2C"

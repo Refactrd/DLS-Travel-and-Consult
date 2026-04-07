@@ -55,9 +55,9 @@ export default function AboutHero() {
           ref={headingRef}
           className="font-display text-5xl sm:text-6xl md:text-7xl font-medium text-gray-900 leading-[1.08] tracking-tight mb-7"
         >
-          Built to Bridge
+          Driven by Excellence
           <br />
-          Continents
+          We take You Global 
         </h1>
 
         {/* Subtext */}
@@ -65,8 +65,7 @@ export default function AboutHero() {
           ref={subRef}
           className="text-gray-500 text-base sm:text-lg leading-relaxed max-w-xl mx-auto font-body"
         >
-          DLS was founded with a single conviction: that every African who
-          dreams of Europe deserves expert, honest, and affordable guidance.
+          At DLS Travel and Consult, we simplify global opportunities through expert guidance, personalized support, and a commitment to excellence.
         </p>
       </div>
     </section>

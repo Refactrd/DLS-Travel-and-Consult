@@ -109,17 +109,17 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/40 text-sm text-center">
-            © {new Date().getFullYear()} {" "}Dash Language School – Travel &amp; Consult. All rights reserved.
+            © {new Date().getFullYear()} {" "}DLS Travel &amp;Consult. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <Link
-              href="/privacy"
+              href="/"
               className="text-white/40 text-sm hover:text-white/70 transition-colors duration-150"
             >
               Privacy Policy
             </Link>
             <Link
-              href="/terms"
+              href="/"
               className="text-white/40 text-sm hover:text-white/70 transition-colors duration-150"
             >
               Terms of Services

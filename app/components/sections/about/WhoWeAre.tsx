@@ -62,7 +62,7 @@ export default function WhoWeAre() {
 
           <div className="flex flex-col gap-4">
             <p className="text-gray-500 text-[15px] leading-relaxed">
-              Dash Language School &amp; Travel Consult (DLS) is a full-service
+              DLSl &amp; Travel Consult is a full-service
               consultancy that takes clients from language zero to European visa
               approval. We are educators, advisors, and advocates in one.
             </p>

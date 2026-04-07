@@ -54,31 +54,21 @@ export default function CTABanner() {
         ref={contentRef}
         className="relative z-10 flex flex-col items-center justify-center text-center px-4 py-28 sm:py-36"
       >
-        <h2 className="font-display text-4xl sm:text-5xl md:text-[58px] font-medium text-white leading-[1.1] max-w-3xl mb-6">
-          Take the First Step Toward Your European Dream
+        <h2 className="font-display text-4xl sm:text-5xl md:text-[48px] font-medium text-white leading-[1.1] max-w-3xl mb-6">
+          Take the First Step Toward Abroad
         </h2>
 
-        <p className="text-white/75 text-base sm:text-lg max-w-xl leading-relaxed mb-10 font-body">
-          Thousands have made it. Your journey starts with one conversation.
-          <br className="hidden sm:block" />
-          Let&apos;s find the right path for you.
+        <p className="text-white/75 text-base sm:text-xl max-w-xl leading-relaxed mb-10 font-body">
+          Begin your stress-free move abroad with guidance you can trust completely. 
         </p>
 
         {/* CTA row — WhatsApp + Book Consultation (same pattern as Hero) */}
         <div className="flex items-center gap-6">
-          <a
+          <Link
             href="https://wa.me/yourphonenumber"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Chat on WhatsApp"
-            className="w-14 h-14 rounded-full flex items-center justify-center border-2 border-[#25D366]/60 bg-[#1a1a4e] hover:bg-[#25D366]/20 hover:border-[#25D366] hover:scale-105 transition-all duration-200 z-10"
-            style={{ marginRight: "-1px" }}
-          >
-            <WhatsAppIcon className="w-7 h-7" />
-          </a>
-
-          <Link
-            href="/consultation"
             className="group relative inline-flex items-center px-7 py-4 text-white font-semibold text-[15px] overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-[#1818B1]/50 hover:-translate-y-0.5 rounded-full"
             style={{
               background: "linear-gradient(135deg, #1818B1 0%, #1515cc 100%)",

@@ -5,101 +5,125 @@ import { useEffect, useRef } from "react";
 const rowOne = [
   {
     id: 1,
-    name: "Robert Lewis",
+    name: "Olagunju A. Kola",
     visa: "Study Visa · Germany",
     quote:
-      "My study visa for Germany was approved first try — I couldn't believe how smooth the process was.",
+      "DLS Travel and Consult made my dream of studying in Germany a reality. Every step, from application to visa, was seamless.",
     stars: 4,
   },
   {
     id: 2,
-    name: "Emily Davis",
-    visa: "Student Visa · Italy",
+    name: "Samuel Temitayo",
+    visa: "Student Visa · France",
     quote:
-      "Dash explained everything clearly and the training application went through without a hitch.",
+      "Thanks to DLS, I got admitted to my top-choice university in France. Their guidance and support were invaluable.",
     stars: 5,
   },
   {
     id: 3,
-    name: "Michael Brown",
-    visa: "Student Visa · Spain",
+    name: "Osakwe C. Rita",
+    visa: "Student Visa · Germany",
     quote:
-      "My family is together in Spain now. Forever grateful to the Dash team.",
+      "My dream of getting a scholarship and studying abroad was achieved through the help of God Almighty and DLS Consult. They guided me all through the processes, and their customer representatives made me feel confident in their services",
     stars: 5,
   },
   {
     id: 4,
-    name: "Sophia Wilson",
+    name: "Austin Emeka J From Nigeria - Germany (Now in Netherlands)",
     visa: "Student Visa · Netherlands",
     quote:
-      "I was thrilled to receive my student visa for the Netherlands on my first try!",
+      "From selecting the right program, language proficiency, appointment booking to every single step, DLS Travel simplified the entire process. Truly professional and caring.",
     stars: 5,
   },
   {
     id: 5,
-    name: "James Carter",
-    visa: "Work Visa · France",
+    name: "Fatima Adegbaju",
+    visa: "Study Visa · Germany",
     quote:
-      "From the first call to landing in Paris, DLS held my hand through everything.",
+      "Studying abroad was always my dream, and DLS  made it a reality, even though studying German language was a little bit demanding. Highly recommend them!",
     stars: 5,
   },
   {
     id: 6,
-    name: "Amara Osei",
-    visa: "Study Visa · Austria",
+    name: "Olivia Chidinma",
+    visa: "Voluntary Service · Germany",
     quote:
-      "I never thought studying in Vienna was possible. DLS made it real for me.",
+      "I wanted to volunteer in the caregiving sector abroad, but the logistics seemed overwhelming. DLS handled everything and made it an incredible experience",
+    stars: 5,
+  },
+   {
+    id: 7,
+    name: "Michael B",
+    visa: "Voluntary Service · France",
+    quote:
+      "DLS Travel made my volunteer service abroad seamless. From applications to arrival, their team supported me at every step.",
+    stars: 5,
+  },
+  {
+    id: 8,
+    name: "Linda A",
+    visa: "Voluntary Service · Netherlands",
+    quote:
+      "The international training program I attended was life-changing, and DLS Travel ensured every detail, from travel to accommodation, was perfect.",
+    stars: 5,
+  },
+   {
+    id: 9,
+    name: "Daniel O",
+    visa: "Voluntary Service · Germany",
+    quote:
+      "DLS Travel managed all logistics for my professional training abroad, making the experience smooth, enjoyable, and highly productive.",
+    stars: 5,
+  },
+  {
+    id: 10,
+    name: "Grace F",
+    visa: "Voluntary Service · Spain",
+    quote:
+      "I gained new skills overseas thanks to DLS’s impeccable support. They handled everything and allowed me to focus fully on learning.",
     stars: 5,
   },
 ];
 
 const rowTwo = [
   {
-    id: 7,
-    name: "Johnson",
-    visa: "Study Visa · Belgium",
-    quote:
-      "When my student visa for Belgium was approved I cried tears of joy. Thank you DLS!",
-    stars: 5,
-  },
-  {
-    id: 8,
-    name: "Noah Garcia",
-    visa: "Student Visa · Switzerland",
-    quote:
-      "I was thrilled when my student visa for Switzerland was approved on my first try!",
-    stars: 5,
-  },
-  {
-    id: 9,
-    name: "Olivia Martinez",
-    visa: "Student Visa · Austria",
-    quote:
-      "I was over the moon when my student visa for Austria was granted on the first attempt!",
-    stars: 5,
-  },
-  {
-    id: 10,
-    name: "Ethan White",
-    visa: "Student Visa · Denmark",
-    quote:
-      "I was ecstatic when my student visa for Denmark was granted on my first attempt!",
-    stars: 5,
-  },
-  {
     id: 11,
-    name: "Ava Lee",
-    visa: "Student Visa · Portugal",
+    name: "Chinwe Ikemba",
+    visa: "Family Reunification · Germany",
     quote:
-      "I was so excited when my student visa for Portugal got approved. DLS is the best!",
+      "Moving to join my spouse in Germany felt daunting, but DLS Travel guided us seamlessly through the entire family reunification process.",
     stars: 5,
   },
   {
     id: 12,
-    name: "Chioma Adeyemi",
-    visa: "Family Visa · Germany",
+    name: "Emmanuela Kayode",
+    visa: "Family Reunification · Germany",
     quote:
-      "The team guided us patiently through every document. We're finally reunited in Germany.",
+      "DLS Travel made our family reunification in Germany straightforward and stress-free. Their expertise and support were exceptional.",
+    stars: 5,
+  },
+  {
+    id: 13,
+    name: "Patricia L",
+    visa: "Family Reunification · Netherlands",
+    quote:
+      "Reuniting with my family in the Netherlands was a dream made easy by DLS Travel’s professional guidance and care.",
+    stars: 5,
+  },
+  {
+    id: 14,
+    name: "Samuel Roy Oyedele",
+    visa: "Professional Relocatee · Spain",
+    quote:
+      "DLS Travel handled my relocation to Spain flawlessly. From visa processing to settling in, their team was dependable and efficient.",
+    stars: 5,
+  },
+  {
+    id: 15,
+    name: "Celestine. O",
+    visa: "Professional Relocatee · Germany",
+    quote:
+      "I relocated to Germany for work with DLS Travel’s support. Every step was managed professionally, making my move completely stress-free.",
     stars: 5,
   },
 ];
