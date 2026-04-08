@@ -141,13 +141,18 @@ export default function ProgramsSection() {
           </div>
 
           {/* Row 2 — 2 cards, same width as row 1 cards, centred */}
-          <div className="flex justify-center gap-5">
+          {/* <div className="flex justify-center gap-5">
             <div className="w-full max-w-[calc(33.333%-10px)]">
               <ProgramCard key="voluntary" {...programs[3]} />
             </div>
             <div className="w-full max-w-[calc(33.333%-10px)]">
               <ProgramCard key="family" {...programs[4]} />
             </div>
+          </div> */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div className="hidden lg:block" />
+            <ProgramCard key="voluntary" {...programs[3]} />
+            <ProgramCard key="family" {...programs[4]} />
           </div>
         </div>
       </div>
