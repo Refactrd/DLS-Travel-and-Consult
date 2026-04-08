@@ -36,8 +36,10 @@ export default function HeroSection() {
   return (
     <section className="w-full min-h-screen bg-white flex items-center px-4 sm:px-6 lg:px-8 pt-24 pb-12 overflow-hidden">
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+
         {/* Left — Text content */}
         <div className="flex flex-col gap-7 max-w-xl">
+
           {/* Badge */}
           <div ref={badgeRef}>
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white shadow-sm text-gray-600 text-sm font-medium">
@@ -50,15 +52,15 @@ export default function HeroSection() {
           {/* Heading */}
           <h1
             ref={headingRef}
-            className="font-body font-bold text-[#181E4B] leading-[50px] lg:leading-[79px] text-[40px] lg:text-[84px]"
+            className="font-body font-bold text-[#181E4B] leading-[50px] lg:leading-[85px] text-[40px] lg:text-[84px]"
             // style={{ fontSize: "clamp(2.8rem, 5vw, 4.2rem)" }}
           >
-            Your pathway{" "}
+            Your pathway{" "}  
             <span className="relative inline-block">
               <span className="relative z-10">to global</span>
               {/* Blue underline brush stroke */}
               <svg
-                className="absolute -bottom-1 left-0 w-full"
+                className="absolute -bottom-[14px] left-0 w-full"
                 viewBox="0 0 200 18"
                 fill="none"
                 preserveAspectRatio="none"
@@ -82,14 +84,13 @@ export default function HeroSection() {
             ref={subRef}
             className="text-gray-500 text-base sm:text-[17px] leading-relaxed max-w-md font-body"
           >
-            We guide you through every step of international travel, study, and
-            relocation, making your global ambitions stress-free and achievable.
+            We guide you through every step of international travel, study, and relocation, making your global ambitions stress-free and achievable.
           </p>
 
           {/* CTA buttons */}
           <div ref={ctaRef} className="flex items-center gap-4 flex-wrap">
             <Link
-              href="https://wa.me/yourphonenumber"
+             href="https://wa.me/yourphonenumber"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Chat on WhatsApp"
@@ -101,14 +102,13 @@ export default function HeroSection() {
               <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-500 bg-gradient-to-r from-transparent via-white/15 to-transparent" />
               <span className="relative z-10">Book Consultation</span>
             </Link>
+
+           
           </div>
         </div>
 
         {/* Right — Single hero image */}
-        <div
-          ref={imageRef}
-          className="relative w-full flex justify-center lg:justify-end"
-        >
+        <div ref={imageRef} className="relative w-full flex justify-center lg:justify-end">
           <div
             className="relative w-full max-w-[620px]"
             style={{ aspectRatio: "620/660" }}
@@ -123,6 +123,7 @@ export default function HeroSection() {
             />
           </div>
         </div>
+
       </div>
     </section>
   );

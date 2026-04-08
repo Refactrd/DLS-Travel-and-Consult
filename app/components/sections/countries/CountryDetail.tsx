@@ -53,7 +53,9 @@ export default function CountryDetail({ country }: { country: CountryData }) {
             {country.heroTagline}
           </p>
           <Link
-            href="/consultation"
+            href="https://wa.me/yourphonenumber"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group relative inline-flex items-center px-8 py-4 rounded-full text-white font-semibold text-base overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-[#1818B1]/40 hover:-translate-y-0.5"
             style={{
               background: "linear-gradient(135deg, #1818B1 0%, #0000FF 100%)",
@@ -83,7 +85,6 @@ export default function CountryDetail({ country }: { country: CountryData }) {
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-12 items-start">
             {/* ── Left column ─────────────────────────────── */}
             <div className="space-y-16">
-
               {/* Why section */}
               <FadeBlock>
                 <SectionLabel>{`Why ${country.name}`}</SectionLabel>
@@ -92,7 +93,10 @@ export default function CountryDetail({ country }: { country: CountryData }) {
                 </h2>
                 <div className="space-y-4">
                   {country.whyBody.map((para, i) => (
-                    <p key={i} className="text-gray-500 text-[15px] leading-relaxed">
+                    <p
+                      key={i}
+                      className="text-gray-500 text-[15px] leading-relaxed"
+                    >
                       {para}
                     </p>
                   ))}
@@ -185,11 +189,14 @@ export default function CountryDetail({ country }: { country: CountryData }) {
                   href="/consultation"
                   className="group relative inline-flex items-center px-7 py-4 rounded-full text-white font-semibold text-[15px] overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-[#1818B1]/30 hover:-translate-y-0.5"
                   style={{
-                    background: "linear-gradient(135deg, #1818B1 0%, #0000FF 100%)",
+                    background:
+                      "linear-gradient(135deg, #1818B1 0%, #0000FF 100%)",
                   }}
                 >
                   <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-500 bg-gradient-to-r from-transparent via-white/15 to-transparent" />
-                  <span className="relative z-10">{country.language.ctaLabel}</span>
+                  <span className="relative z-10">
+                    {country.language.ctaLabel}
+                  </span>
                 </Link>
               </FadeBlock>
 
@@ -311,19 +318,21 @@ export default function CountryDetail({ country }: { country: CountryData }) {
                 </p>
                 <div className="space-y-3">
                   <Link
-                    href="/consultation"
+                    href="https://wa.me/yourphonenumber"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-full flex items-center justify-center px-5 py-3.5 rounded-full bg-[#1818B1] text-white font-semibold text-[15px] hover:bg-[#0000FF] transition-colors duration-200"
                   >
                     Book Consultation
                   </Link>
-                  <a
+                  {/* <a
                     href="https://wa.me/yourphonenumber"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full flex items-center justify-center px-5 py-3.5 rounded-full bg-[#25D366] text-white font-semibold text-[15px] hover:bg-[#1fba59] transition-colors duration-200"
                   >
                     Message Us on WhatsApp
-                  </a>
+                  </a> */}
                 </div>
               </div>
 
@@ -381,7 +390,7 @@ function FadeBlock({ children }: { children: React.ReactNode }) {
         el.style.transform = "translateY(0)";
         obs.disconnect();
       },
-      { threshold: 0.08 }
+      { threshold: 0.08 },
     );
     obs.observe(el);
     return () => obs.disconnect();
