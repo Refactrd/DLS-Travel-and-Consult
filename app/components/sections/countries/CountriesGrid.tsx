@@ -26,13 +26,13 @@ export const countries = [
     tagline: "Prestigious Grandes Écoles, cutting-edge research institutions, and a vibrant cultural capital of the world.",
     image: "/images/austria.png",
   },
-  {
-    slug: "canada",
-    name: "Canada",
-    flag: "🇨🇦",
-    tagline: "English-speaking, immigrant-friendly, and home to globally ranked universities with clear immigration pathways.",
-    image: "/images/canada.png",
-  },
+  // {
+  //   slug: "canada",
+  //   name: "Canada",
+  //   flag: "🇨🇦",
+  //   tagline: "English-speaking, immigrant-friendly, and home to globally ranked universities with clear immigration pathways.",
+  //   image: "/images/canada.png",
+  // },
   {
     slug: "netherlands",
     name: "Netherlands",

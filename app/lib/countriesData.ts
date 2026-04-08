@@ -291,55 +291,55 @@ export const countriesData: CountryData[] = [
   },
 
   // ─── CANADA ───────────────────────────────────────────────────
-  {
-    slug: "canada",
-    name: "Canada",
-    flag: "🇨🇦",
-    heroTagline: "English-speaking, immigrant-friendly, and globally ranked universities",
-    heroImage: "/images/canada.png",
-    whyTitle: "The Clearest Path to a Global Future",
-    whyBody: [
-      "Canada is one of the most immigration-friendly countries in the world. With globally ranked universities, a multicultural society, and clear pathways from study permit to permanent residency, Canada is an exceptional destination for ambitious Africans.",
-      "Whether you are pursuing a degree, a diploma program, or professional certification, Canada offers a structured and transparent process from application to arrival. The country's open immigration culture and bilingual environment make it especially welcoming for Nigerian students.",
-    ],
-    programs: [
-      { emoji: "🎓", title: "Study Abroad", description: "Access globally ranked Canadian universities with comprehensive admissions and visa support." },
-      { emoji: "🤝", title: "Vocational Training", description: "Pursue practical training programs aligned with Canada's high-demand industries." },
-      { emoji: "👨‍👩‍👧", title: "Family Reunification", description: "Reunite with your loved ones in Canada through a clear and well-supported process." },
-    ],
-    requirements: [
-      { label: "Valid Passport", detail: "A valid international passport ready for your journey." },
-      { label: "Letter of Acceptance", detail: "From a Designated Learning Institution (DLI) in Canada." },
-      { label: "Proof of Financial Means", detail: "Evidence of sufficient funds to cover tuition and living expenses." },
-      { label: "Statement of Purpose", detail: "A clear statement outlining your academic or career goals." },
-      { label: "English Proficiency", detail: "IELTS or equivalent certificate meeting your institution's minimum requirements." },
-    ],
-    language: {
-      heading: "English and French Preparation with DLS",
-      body: "Canada is bilingual. We offer IELTS preparation and English communication courses to ensure you meet the language requirements for your chosen Canadian institution.",
-      levels: ["IELTS Preparation", "English Communication", "Academic Writing", "French A1 to B1"],
-      ctaLabel: "Enquire About English Classes",
-    },
-    continuousSupport:
-      "We provide continued guidance and support to help you settle smoothly into Canadian life after arrival.",
-    roadmap: [
-      { step: 1, title: "Initial Consultation", description: "We review your academic background and identify the right Canadian institution and program for you." },
-      { step: 2, title: "Language Preparation", description: "Prepare for IELTS or required English proficiency tests with our certified instructors." },
-      { step: 3, title: "Institution Application", description: "We guide you through applying to Designated Learning Institutions and securing your acceptance letter." },
-      { step: 4, title: "Document Preparation", description: "We assist with compiling, translating, and certifying all required documents." },
-      { step: 5, title: "Study Permit Application", description: "We prepare and submit your Canadian study permit application with the strongest possible profile." },
-      { step: 6, title: "Departure and Arrival Support", description: "Pre-departure briefing, arrival tips, accommodation guidance, and continued support after landing." },
-    ],
-    gallery: ["/images/canada.png", "/images/canada.png", "/images/canada.png", "/images/canada.png", "/images/canada.png", "/images/canada.png"],
-    sidebar: {
-      heading: "Ready to Move to Canada?",
-      testimonial: {
-        name: "James Carter",
-        visa: "Study Permit · Canada",
-        quote: "DLS made the entire Canadian application process feel simple and achievable. I'm now studying in Toronto!",
-      },
-    },
-  },
+  // {
+  //   slug: "canada",
+  //   name: "Canada",
+  //   flag: "🇨🇦",
+  //   heroTagline: "English-speaking, immigrant-friendly, and globally ranked universities",
+  //   heroImage: "/images/canada.png",
+  //   whyTitle: "The Clearest Path to a Global Future",
+  //   whyBody: [
+  //     "Canada is one of the most immigration-friendly countries in the world. With globally ranked universities, a multicultural society, and clear pathways from study permit to permanent residency, Canada is an exceptional destination for ambitious Africans.",
+  //     "Whether you are pursuing a degree, a diploma program, or professional certification, Canada offers a structured and transparent process from application to arrival. The country's open immigration culture and bilingual environment make it especially welcoming for Nigerian students.",
+  //   ],
+  //   programs: [
+  //     { emoji: "🎓", title: "Study Abroad", description: "Access globally ranked Canadian universities with comprehensive admissions and visa support." },
+  //     { emoji: "🤝", title: "Vocational Training", description: "Pursue practical training programs aligned with Canada's high-demand industries." },
+  //     { emoji: "👨‍👩‍👧", title: "Family Reunification", description: "Reunite with your loved ones in Canada through a clear and well-supported process." },
+  //   ],
+  //   requirements: [
+  //     { label: "Valid Passport", detail: "A valid international passport ready for your journey." },
+  //     { label: "Letter of Acceptance", detail: "From a Designated Learning Institution (DLI) in Canada." },
+  //     { label: "Proof of Financial Means", detail: "Evidence of sufficient funds to cover tuition and living expenses." },
+  //     { label: "Statement of Purpose", detail: "A clear statement outlining your academic or career goals." },
+  //     { label: "English Proficiency", detail: "IELTS or equivalent certificate meeting your institution's minimum requirements." },
+  //   ],
+  //   language: {
+  //     heading: "English and French Preparation with DLS",
+  //     body: "Canada is bilingual. We offer IELTS preparation and English communication courses to ensure you meet the language requirements for your chosen Canadian institution.",
+  //     levels: ["IELTS Preparation", "English Communication", "Academic Writing", "French A1 to B1"],
+  //     ctaLabel: "Enquire About English Classes",
+  //   },
+  //   continuousSupport:
+  //     "We provide continued guidance and support to help you settle smoothly into Canadian life after arrival.",
+  //   roadmap: [
+  //     { step: 1, title: "Initial Consultation", description: "We review your academic background and identify the right Canadian institution and program for you." },
+  //     { step: 2, title: "Language Preparation", description: "Prepare for IELTS or required English proficiency tests with our certified instructors." },
+  //     { step: 3, title: "Institution Application", description: "We guide you through applying to Designated Learning Institutions and securing your acceptance letter." },
+  //     { step: 4, title: "Document Preparation", description: "We assist with compiling, translating, and certifying all required documents." },
+  //     { step: 5, title: "Study Permit Application", description: "We prepare and submit your Canadian study permit application with the strongest possible profile." },
+  //     { step: 6, title: "Departure and Arrival Support", description: "Pre-departure briefing, arrival tips, accommodation guidance, and continued support after landing." },
+  //   ],
+  //   gallery: ["/images/canada.png", "/images/canada.png", "/images/canada.png", "/images/canada.png", "/images/canada.png", "/images/canada.png"],
+  //   sidebar: {
+  //     heading: "Ready to Move to Canada?",
+  //     testimonial: {
+  //       name: "James Carter",
+  //       visa: "Study Permit · Canada",
+  //       quote: "DLS made the entire Canadian application process feel simple and achievable. I'm now studying in Toronto!",
+  //     },
+  //   },
+  // },
 
   // ─── NETHERLANDS ──────────────────────────────────────────────
   {
