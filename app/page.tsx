@@ -10,6 +10,7 @@ import TestimonialsSection from "./components/sections/home/TestimonialsSection"
 import FAQSection from "./components/sections/home/FAQSection";
 import Footer from "./components/layout/Footer";
 import CTABanner from "./components/sections/home/CTABanner";
+import CountriesHero from "./components/sections/countries/CountriesHero";
 
 
 export const metadata: Metadata = {
@@ -22,7 +23,8 @@ export default function HomePage() {
   return (
     <main className="relative">
       <Navbar />
-      <HeroSection />
+      <CountriesHero/>
+      {/* <HeroSection /> */}
       <DestinationsSection />
       <AboutSection/>
       <AboutStorySection/>

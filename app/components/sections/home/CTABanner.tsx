@@ -65,20 +65,18 @@ export default function CTABanner() {
         {/* CTA row — WhatsApp + Book Consultation (same pattern as Hero) */}
         <div className="flex items-center gap-6">
           <Link
-            href="https://wa.me/yourphonenumber"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Chat on WhatsApp"
-            className="group relative inline-flex items-center px-7 py-4 text-white font-semibold text-[15px] overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-[#1818B1]/50 hover:-translate-y-0.5 rounded-full"
-            style={{
-              background: "linear-gradient(135deg, #1818B1 0%, #1515cc 100%)",
-             
-              paddingLeft: "28px",
-            }}
-          >
-            <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-500 bg-gradient-to-r from-transparent via-white/15 to-transparent" />
-            <span className="relative z-10">Book Consultation</span>
-          </Link>
+              href="/consultation"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full font-body font-semibold text-white text-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl"
+              style={{
+                background: "linear-gradient(135deg, #0D7EFF 0%, #0055cc 100%)",
+                boxShadow: "0 8px 24px rgba(13,126,255,0.35)",
+              }}
+            >
+              Book Free Consultation
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </Link>
         </div>
       </div>
     </section>
