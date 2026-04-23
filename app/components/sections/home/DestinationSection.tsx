@@ -148,7 +148,7 @@ export default function DestinationsSection() {
               a fixed height on mobile and aspect-ratio on sm+.
               The card uses min-height on mobile and aspect-ratio on desktop.
             */
-            aspectRatio: "4/3",
+            aspectRatio: "16/9",
             transition: "transform 0.42s cubic-bezier(0.4,0,0.2,1), opacity 0.42s ease",
             transform: slideOut,
             opacity: sliding ? 0.4 : 1,
