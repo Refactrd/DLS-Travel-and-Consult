@@ -4,42 +4,32 @@
 
 /* ─── Brand CSS Variables ──────────────────────────────────────── */
 :root {
-  --color-primary:      #1818B1;
-  --color-primary-dark: #0000FF;
+  --color-primary:      #0D7EFF;
+  --color-primary-dark: #0055cc;
   --color-accent:       #AFAFFC;
-  --color-bg-tint:      #F5F6FF;
-  --color-black:        #000000;
+  --color-bg-tint:      #EEF4FF;
+  --color-black:        #0a0a2e;
   --color-white:        #FFFFFF;
-  --gradient-hero: linear-gradient(135deg, #090934 0%, #1515A9 100%);
-
-  --font-display: var(--font-satoshi);
-  --font-body:    var(--font-urbanist);
 }
 
-/* ─── Base layer overrides ──────────────────────────────────────── */
+/* ─── Base ──────────────────────────────────────────────────────── */
 @layer base {
   html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
   }
 
+  /* Poppins on body */
   body {
-    font-family: var(--font-urbanist), ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
   }
 
+  /* Montserrat on all headings */
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-satoshi), ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
   }
 
-  /* Improve image rendering */
-  img, video {
-    max-width: 100%;
-    height: auto;
-  }
-
-  /* Focus ring */
   :focus-visible {
     outline: 2px solid var(--color-primary);
     outline-offset: 2px;
@@ -47,30 +37,44 @@
   }
 }
 
-/* ─── Utility layer additions ───────────────────────────────────── */
+/* ─── Utilities ─────────────────────────────────────────────────── */
 @layer utilities {
   .font-display {
-    font-family: var(--font-satoshi), ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
   }
 
   .font-body {
-    font-family: var(--font-urbanist), ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
   }
 
-  .bg-gradient-hero {
-    background: var(--gradient-hero);
-  }
+  .text-primary { color: var(--color-primary); }
+  .bg-tint      { background-color: var(--color-bg-tint); }
+}
 
-  .text-primary {
-    color: var(--color-primary);
-  }
+/* ─── Hide Google Translate toolbar ────────────────────────────── */
+/*
+  Google Translate injects its own top bar and nudges the body down.
+  We hide all of that since we drive translation from our own Navbar.
+*/
+.goog-te-banner-frame,
+.goog-te-balloon-frame,
+#goog-gt-tt,
+.goog-tooltip,
+.goog-tooltip:hover,
+.goog-text-highlight {
+  display: none !important;
+}
 
-  .text-accent {
-    color: var(--color-accent);
-  }
+body {
+  top: 0 !important;
+  position: static !important;
+}
 
-  /* GPU-composited layer hint for heavy animations */
-  .will-animate {
-    will-change: transform, opacity;
-  }
+.skiptranslate {
+  display: none !important;
+}
+
+/* Prevent the flash of translated text before styles load */
+.notranslate {
+  unicode-bidi: isolate;
 }
