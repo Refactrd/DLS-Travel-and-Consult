@@ -314,8 +314,10 @@ export default function ProgramsSection() {
                   <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </Link>
-              <Link
-                href="/consultation"
+              <a
+                href="https://cal.eu/dls-travel-consult-ox8fk5/travel"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full font-body font-semibold text-sm transition-all duration-200 hover:-translate-y-0.5"
                 style={{
                   background: "white",
@@ -324,7 +326,7 @@ export default function ProgramsSection() {
                 }}
               >
                 Book Consultation
-              </Link>
+              </a>
             </div>
 
             {/* Step dots */}

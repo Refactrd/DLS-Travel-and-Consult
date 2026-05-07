@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { CountryData } from "@/app/lib/countriesData";
+import { getLanguageSchoolUrl } from "@/app/lib/languageSchoolUrl";
 
 export default function CountryDetail({ country }: { country: CountryData }) {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -21,9 +22,11 @@ export default function CountryDetail({ country }: { country: CountryData }) {
     }, 120);
   }, []);
 
+  const languageUrl = getLanguageSchoolUrl(country.slug);
+
   return (
     <>
-      {/* ── Full-width hero ─────────────────────────────────── */}
+      {/* ── Full-width hero ─────────────────────────────── */}
       <section className="relative w-full min-h-[620px] flex items-center justify-center overflow-hidden">
         <Image
           src={country.heroImage}
@@ -52,18 +55,16 @@ export default function CountryDetail({ country }: { country: CountryData }) {
           <p className="text-white/70 text-base sm:text-lg max-w-xl mx-auto mb-8">
             {country.heroTagline}
           </p>
-          <Link
-            href="https://wa.me/yourphonenumber"
+          <a
+            href="https://cal.eu/dls-travel-consult-ox8fk5/travel"
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative inline-flex items-center px-8 py-4 rounded-full text-white font-semibold text-base overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-[#1818B1]/40 hover:-translate-y-0.5"
-            style={{
-              background: "linear-gradient(135deg, #1818B1 0%, #0000FF 100%)",
-            }}
+            className="group relative inline-flex items-center px-8 py-4 rounded-full text-white font-semibold text-base overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-[#0D7EFF]/40 hover:-translate-y-0.5"
+            style={{ background: "linear-gradient(135deg, #0D7EFF 0%, #0055cc 100%)" }}
           >
             <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-500 bg-gradient-to-r from-transparent via-white/15 to-transparent" />
             <span className="relative z-10">Book Now</span>
-          </Link>
+          </a>
         </div>
       </section>
 
@@ -72,10 +73,7 @@ export default function CountryDetail({ country }: { country: CountryData }) {
         <div className="max-w-7xl mx-auto">
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 text-sm text-gray-400 mb-12">
-            <Link
-              href="/countries"
-              className="hover:text-[#1818B1] transition-colors duration-150"
-            >
+            <Link href="/countries" className="hover:text-[#0D7EFF] transition-colors duration-150">
               Countries
             </Link>
             <span>/</span>
@@ -83,8 +81,10 @@ export default function CountryDetail({ country }: { country: CountryData }) {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-12 items-start">
+
             {/* ── Left column ─────────────────────────────── */}
             <div className="space-y-16">
+
               {/* Why section */}
               <FadeBlock>
                 <SectionLabel>{`Why ${country.name}`}</SectionLabel>
@@ -93,17 +93,12 @@ export default function CountryDetail({ country }: { country: CountryData }) {
                 </h2>
                 <div className="space-y-4">
                   {country.whyBody.map((para, i) => (
-                    <p
-                      key={i}
-                      className="text-gray-500 text-[15px] leading-relaxed"
-                    >
-                      {para}
-                    </p>
+                    <p key={i} className="text-gray-500 text-[15px] leading-relaxed">{para}</p>
                   ))}
                 </div>
               </FadeBlock>
 
-              {/* Available Programs */}
+              {/* Programs */}
               <FadeBlock>
                 <SectionLabel>Available Programs</SectionLabel>
                 <h2 className="font-display text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
@@ -113,9 +108,9 @@ export default function CountryDetail({ country }: { country: CountryData }) {
                   {country.programs.map((prog) => (
                     <div
                       key={prog.title}
-                      className="flex items-start gap-4 px-5 py-4 rounded-2xl border border-gray-200 bg-white hover:border-[#1818B1]/30 hover:bg-[#F5F6FF] transition-all duration-200"
+                      className="flex items-start gap-4 px-5 py-4 rounded-2xl border border-gray-200 bg-white hover:border-[#0D7EFF]/30 hover:bg-[#EEF4FF] transition-all duration-200"
                     >
-                      <div className="w-10 h-10 rounded-xl bg-[#F5F6FF] flex items-center justify-center text-xl flex-shrink-0 mt-0.5">
+                      <div className="w-10 h-10 rounded-xl bg-[#EEF4FF] flex items-center justify-center text-xl flex-shrink-0 mt-0.5">
                         {prog.emoji}
                       </div>
                       <div>
@@ -141,23 +136,18 @@ export default function CountryDetail({ country }: { country: CountryData }) {
                 </h2>
                 <div className="space-y-3">
                   {country.requirements.map((req) => {
-                    // Support both old string[] format and new {label, detail} format
-                    const label = typeof req === "string" ? req : req.label;
+                    const label  = typeof req === "string" ? req : req.label;
                     const detail = typeof req === "string" ? null : req.detail;
                     return (
                       <div
                         key={label}
-                        className="flex items-start gap-4 px-5 py-4 rounded-2xl bg-[#F5F6FF] border border-gray-100"
+                        className="flex items-start gap-4 px-5 py-4 rounded-2xl bg-[#EEF4FF] border border-gray-100"
                       >
-                        <CheckIcon className="w-5 h-5 text-[#1818B1] flex-shrink-0 mt-0.5" />
+                        <CheckIcon className="w-5 h-5 text-[#0D7EFF] flex-shrink-0 mt-0.5" />
                         <div>
-                          <p className="text-gray-800 text-[15px] font-semibold leading-snug">
-                            {label}
-                          </p>
+                          <p className="text-gray-800 text-[15px] font-semibold leading-snug">{label}</p>
                           {detail && (
-                            <p className="text-gray-500 text-sm leading-relaxed mt-0.5">
-                              {detail}
-                            </p>
+                            <p className="text-gray-500 text-sm leading-relaxed mt-0.5">{detail}</p>
                           )}
                         </div>
                       </div>
@@ -185,19 +175,32 @@ export default function CountryDetail({ country }: { country: CountryData }) {
                     </span>
                   ))}
                 </div>
-                <Link
-                  href="/consultation"
-                  className="group relative inline-flex items-center px-7 py-4 rounded-full text-white font-semibold text-[15px] overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-[#1818B1]/30 hover:-translate-y-0.5"
-                  style={{
-                    background:
-                      "linear-gradient(135deg, #1818B1 0%, #0000FF 100%)",
-                  }}
+
+                {/*
+                  ── Language school CTA ───────────────────────
+                  Uses <a> (not <Link>) because it's an external site.
+                  Opens in a new tab.
+                  URL is dynamic based on country slug:
+                    Germany/Austria/Switzerland → /german
+                    France/Belgium             → /french
+                    Spain                      → /spanish
+                    Portugal                   → /portuguese
+                    Netherlands                → /dutch
+                    Sweden/Finland/Denmark     → homepage (English programs)
+                */}
+                <a
+                  href={languageUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative inline-flex items-center gap-2 px-7 py-4 rounded-full text-white font-semibold text-[15px] overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-[#0D7EFF]/30 hover:-translate-y-0.5"
+                  style={{ background: "linear-gradient(135deg, #0D7EFF 0%, #0055cc 100%)" }}
                 >
                   <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-500 bg-gradient-to-r from-transparent via-white/15 to-transparent" />
-                  <span className="relative z-10">
-                    {country.language.ctaLabel}
-                  </span>
-                </Link>
+                  <span className="relative z-10">{country.language.ctaLabel}</span>
+                  <svg className="relative z-10 w-4 h-4" viewBox="0 0 16 16" fill="none">
+                    <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </a>
               </FadeBlock>
 
               {/* Continuous Support */}
@@ -242,131 +245,61 @@ export default function CountryDetail({ country }: { country: CountryData }) {
               </FadeBlock>
 
               {/* Gallery */}
-              {/* <FadeBlock>
-                <SectionLabel>Gallery</SectionLabel>
-                <h2 className="font-display text-3xl sm:text-4xl font-bold text-gray-900 mb-2">
-                  Beautiful Places in {country.name}
-                </h2>
-                <p className="text-gray-400 text-[15px] mb-7">
-                  From first contact to your new life starting, we handle
-                  everything in between
-                </p>
-                <div className="space-y-3">
-                  <div className="grid grid-cols-[1fr_1fr_1fr_2fr] gap-3">
-                    {country.gallery.slice(0, 3).map((src, i) => (
-                      <div
-                        key={i}
-                        className="relative rounded-2xl overflow-hidden bg-gray-100"
-                        style={{ aspectRatio: "1/1.1" }}
-                      >
-                        <Image
-                          src={src}
-                          alt={`${country.name} ${i + 1}`}
-                          fill
-                          sizes="20vw"
-                          className="object-cover"
-                          loading="lazy"
-                        />
-                      </div>
-                    ))}
-                    <div
-                      className="relative rounded-2xl overflow-hidden bg-gray-100"
-                      style={{ aspectRatio: "16/9" }}
-                    >
-                      <Image
-                        src={country.gallery[3]}
-                        alt={`${country.name} 4`}
-                        fill
-                        sizes="40vw"
-                        className="object-cover"
-                        loading="lazy"
-                      />
-                    </div>
-                  </div>
-                  <div className="grid grid-cols-3 gap-3">
-                    {country.gallery.slice(4, 7).map((src, i) => (
-                      <div
-                        key={i}
-                        className="relative rounded-2xl overflow-hidden bg-gray-100"
-                        style={{ aspectRatio: "4/3" }}
-                      >
-                        <Image
-                          src={src}
-                          alt={`${country.name} ${i + 5}`}
-                          fill
-                          sizes="30vw"
-                          className="object-cover"
-                          loading="lazy"
-                        />
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </FadeBlock> */}
+             
             </div>
 
             {/* ── Sticky right sidebar ──────────────────────── */}
             <div className="sticky top-28 space-y-5">
-              {/* CTA card */}
-              <div className="rounded-2xl border border-gray-200 bg-[#F5F6FF] p-6">
+              <div className="rounded-2xl border border-gray-200 bg-[#EEF4FF] p-6">
                 <h3 className="font-display font-bold text-gray-900 text-lg mb-2">
                   {country.sidebar.heading}
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-5">
-                  Book a free 30-minute discovery call. We'll review your
-                  situation and give you a clear plan, no pressure.
+                  Book a free 30-minute discovery call. We'll review your situation and give you a clear plan, no pressure.
                 </p>
                 <div className="space-y-3">
-                  <Link
-                    href="https://wa.me/yourphonenumber"
+                  <a
+                    href="https://cal.eu/dls-travel-consult-ox8fk5/travel"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full flex items-center justify-center px-5 py-3.5 rounded-full bg-[#1818B1] text-white font-semibold text-[15px] hover:bg-[#0000FF] transition-colors duration-200"
+                    className="w-full flex items-center justify-center px-5 py-3.5 rounded-full bg-[#0D7EFF] text-white font-semibold text-[15px] hover:bg-[#0055cc] transition-colors duration-200"
                   >
                     Book Consultation
-                  </Link>
-                  {/* <a
-                    href="https://wa.me/yourphonenumber"
+                  </a>
+                  <a
+                    href="https://wa.me/2348154867419"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full flex items-center justify-center px-5 py-3.5 rounded-full bg-[#25D366] text-white font-semibold text-[15px] hover:bg-[#1fba59] transition-colors duration-200"
                   >
                     Message Us on WhatsApp
-                  </a> */}
+                  </a>
                 </div>
               </div>
 
-              {/* Testimonial card */}
-              <div className="rounded-2xl border border-gray-200 bg-[#F5F6FF] p-6">
+              <div className="rounded-2xl border border-gray-200 bg-[#EEF4FF] p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-11 h-11 rounded-full bg-gray-700 flex items-center justify-center flex-shrink-0">
                     <span className="text-white text-sm font-semibold">
-                      {country.sidebar.testimonial.name
-                        .split(" ")
-                        .map((w: string) => w[0])
-                        .join("")
-                        .slice(0, 2)}
+                      {country.sidebar.testimonial.name.split(" ").map((w: string) => w[0]).join("").slice(0, 2)}
                     </span>
                   </div>
                   <div>
                     <p className="font-display font-semibold text-gray-900 text-[14px]">
                       {country.sidebar.testimonial.name}
                     </p>
-                    <p className="text-gray-400 text-xs">
-                      {country.sidebar.testimonial.visa}
-                    </p>
+                    <p className="text-gray-400 text-xs">{country.sidebar.testimonial.visa}</p>
                   </div>
                 </div>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
                   &ldquo;{country.sidebar.testimonial.quote}&rdquo;
                 </p>
                 <div className="flex items-center gap-1">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <StarIcon key={i} />
-                  ))}
+                  {Array.from({ length: 5 }).map((_, i) => <StarIcon key={i} />)}
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </section>
@@ -390,7 +323,7 @@ function FadeBlock({ children }: { children: React.ReactNode }) {
         el.style.transform = "translateY(0)";
         obs.disconnect();
       },
-      { threshold: 0.08 },
+      { threshold: 0.08 }
     );
     obs.observe(el);
     return () => obs.disconnect();
@@ -400,10 +333,8 @@ function FadeBlock({ children }: { children: React.ReactNode }) {
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <p className="flex items-center gap-2 text-[#1818B1] text-xs font-bold uppercase mb-3">
-      <span>✦</span>
-      {children}
-      <span>✦</span>
+    <p className="flex items-center gap-2 text-[#0D7EFF] text-xs font-bold uppercase mb-3">
+      <span>✦</span>{children}<span>✦</span>
     </p>
   );
 }
@@ -411,13 +342,7 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 function CheckIcon({ className }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 20 20" fill="none">
-      <path
-        d="M4 10l4 4 8-8"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      <path d="M4 10l4 4 8-8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 }

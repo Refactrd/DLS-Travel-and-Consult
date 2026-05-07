@@ -297,8 +297,10 @@ export default function ProgramsHero() {
             </svg>
           </Link>
 
-          <Link
-            href="/consultation"
+          <a
+            href="https://cal.eu/dls-travel-consult-ox8fk5/travel"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-body font-semibold text-white text-[15px] transition-all duration-200 hover:-translate-y-0.5"
             style={{
               background: "rgba(255,255,255,0.08)",
@@ -307,7 +309,7 @@ export default function ProgramsHero() {
             }}
           >
             Book a Consultation
-          </Link>
+          </a>
         </div>
 
         {/* Program count pills */}

@@ -243,12 +243,14 @@ export default function DestinationsSection() {
               >
                 Read More
               </Link>
-              <Link
-                href="/consultation"
+              <a
+                href="https://cal.eu/dls-travel-consult-ox8fk5/travel"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 px-4 py-2 sm:px-6 sm:py-3 rounded-full bg-white/20 backdrop-blur-sm border border-white/40 text-white font-body font-semibold text-xs sm:text-sm hover:bg-white hover:text-[#0a0a2e] transition-all duration-200"
               >
                 Book Now
-              </Link>
+              </a>
             </div>
           </div>
         </div>

@@ -64,8 +64,10 @@ export default function CTABanner() {
 
         {/* CTA row — WhatsApp + Book Consultation (same pattern as Hero) */}
         <div className="flex items-center gap-6">
-          <Link
-              href="/consultation"
+          <a
+              href="https://cal.eu/dls-travel-consult-ox8fk5/travel"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full font-body font-semibold text-white text-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl"
               style={{
                 background: "linear-gradient(135deg, #0D7EFF 0%, #0055cc 100%)",
@@ -76,7 +78,7 @@ export default function CTABanner() {
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
                 <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-            </Link>
+            </a>
         </div>
       </div>
     </section>

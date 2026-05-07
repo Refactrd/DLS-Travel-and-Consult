@@ -286,8 +286,10 @@ export default function AboutSection() {
               <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </Link>
-          <Link
-            href="/consultation"
+          <a
+            href="https://cal.eu/dls-travel-consult-ox8fk5/travel"
+              target="_blank"
+              rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-body font-semibold text-[#0D7EFF] text-[15px] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
             style={{
               background: "rgba(255,255,255,0.8)",
@@ -296,7 +298,7 @@ export default function AboutSection() {
             }}
           >
             Book a Consultation
-          </Link>
+          </a>
         </div>
       </div>
 
