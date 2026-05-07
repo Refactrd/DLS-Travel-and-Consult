@@ -75,14 +75,16 @@ export default function WhoWeAre() {
           </div>
 
           <div className="pt-2">
-            <Link
-              href="/consultation"
+            <a
+              href="https://cal.eu/dls-travel-consult-ox8fk5/travel"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group relative inline-flex items-center px-7 py-4 rounded-full text-white font-semibold text-[15px] overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-[#1818B1]/30 hover:-translate-y-0.5"
               style={{ background: "linear-gradient(135deg, #1818B1 0%, #0000FF 100%)" }}
             >
               <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-500 bg-gradient-to-r from-transparent via-white/15 to-transparent" />
               <span className="relative z-10">Book Consultation</span>
-            </Link>
+            </a>
           </div>
         </div>
 

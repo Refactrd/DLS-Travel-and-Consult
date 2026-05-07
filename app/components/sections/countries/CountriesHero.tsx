@@ -240,8 +240,10 @@ export default function CountriesHero() {
               <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </Link>
-          <Link
-            href="/consultation"
+          <a
+            href="https://cal.eu/dls-travel-consult-ox8fk5/travel"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center px-8 py-4 rounded-full font-body font-semibold text-white text-[15px] transition-all duration-200 hover:-translate-y-0.5"
             style={{
               background: "rgba(255,255,255,0.1)",
@@ -250,7 +252,7 @@ export default function CountriesHero() {
             }}
           >
             Book a Consultation
-          </Link>
+          </a>
         </div>
 
         {/* Country count */}

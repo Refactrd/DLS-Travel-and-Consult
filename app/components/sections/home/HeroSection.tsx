@@ -426,8 +426,10 @@ export default function HeroSection() {
           className="flex flex-wrap items-center justify-center gap-4 mb-12"
           style={{ opacity: contentIn ? 1 : 0, transition: "opacity 1s ease 0.35s" }}
         >
-          <Link
-            href="/consultation"
+          <a
+            href="https://cal.eu/dls-travel-consult-ox8fk5/travel"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group relative inline-flex items-center gap-2 px-8 py-4 rounded-full font-body font-semibold text-white text-[15px] overflow-hidden transition-all duration-300 hover:-translate-y-0.5"
             style={{
               background: "linear-gradient(135deg, #0D7EFF 0%, #0055cc 100%)",
@@ -439,7 +441,7 @@ export default function HeroSection() {
             <svg className="relative z-10 w-4 h-4 transition-transform group-hover:translate-x-1 duration-200" viewBox="0 0 16 16" fill="none">
               <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-          </Link>
+          </a>
           <Link
             href="/programs"
             className="inline-flex items-center px-8 py-4 rounded-full font-body font-semibold text-white text-[15px] transition-all duration-200 hover:-translate-y-0.5"
