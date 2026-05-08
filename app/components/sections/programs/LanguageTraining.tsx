@@ -21,7 +21,7 @@ export default function LanguageTraining() {
         el.style.transform = "translateY(0)";
         observer.disconnect();
       },
-      { threshold: 0.15 }
+      { threshold: 0.15 },
     );
 
     observer.observe(el);
@@ -30,10 +30,7 @@ export default function LanguageTraining() {
 
   return (
     <section className="w-full bg-[#F5F6FF] py-28 px-4 sm:px-6 lg:px-8">
-      <div
-        ref={contentRef}
-        className="max-w-2xl mx-auto text-center"
-      >
+      <div ref={contentRef} className="max-w-2xl mx-auto text-center">
         <p className="flex items-center justify-center gap-2 text-[#1818B1] text-xs font-bold uppercase mb-5">
           <span>✦</span>
           Language Training
@@ -50,14 +47,18 @@ export default function LanguageTraining() {
           German, French, Spanish, Italian, Dutch, and more from A1 to C1.
         </p>
 
-        <Link
+        <a
           href="https://dashlanguageschool.com.ng"
+          target="_blank"
+          rel="noopener noreferrer"
           className="group relative inline-flex items-center px-8 py-4 rounded-full text-white font-semibold text-[15px] overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-[#1818B1]/30 hover:-translate-y-0.5"
-          style={{ background: "linear-gradient(135deg, #1818B1 0%, #0000FF 100%)" }}
+          style={{
+            background: "linear-gradient(135deg, #1818B1 0%, #0000FF 100%)",
+          }}
         >
           <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-500 bg-gradient-to-r from-transparent via-white/15 to-transparent" />
           <span className="relative z-10">Enquire About Classes</span>
-        </Link>
+        </a>
       </div>
     </section>
   );

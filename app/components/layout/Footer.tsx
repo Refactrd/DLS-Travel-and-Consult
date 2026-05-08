@@ -24,8 +24,8 @@ const contactItems = [
     icon: "✉",
   },
   {
-    label: "WhatsApp / Booking / Enquiries: Coming Soon",
-    href: "#",
+    label: "WhatsApp",
+    href: "https://wa.me/2348154867419",
     icon: "💬",
   },
   {
