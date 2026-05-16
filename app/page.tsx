@@ -14,9 +14,9 @@ import CountriesHero from "./components/sections/countries/CountriesHero";
 
 
 export const metadata: Metadata = {
-  title: "DLS — Your Journey to Europe Starts Here",
+  title: "DLS Travel & Consults — Your Journey to Europe Starts Here",
   description:
-    "DLS connects ambitious Africans to study, work, and life opportunities across Europe with expert visa guidance, language training, and end-to-end support.",
+    "DLS Travel & Consults connects ambitious Africans to study, work, and life opportunities across Europe with expert visa guidance, language training, and end-to-end support.",
 };
 
 export default function HomePage() {
