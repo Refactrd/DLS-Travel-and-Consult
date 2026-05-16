@@ -153,7 +153,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link href="/" className="flex-shrink-0">
-          <div className="relative h-12 w-24">
+          <div className="relative h-9 w-24">
             <Image src="/images/navbar-logo.png" alt="DLS Logo" fill sizes="96px"
               className="object-contain object-left" priority />
           </div>
@@ -316,22 +316,15 @@ export default function Navbar() {
             )}
           </div>
 
-          {/* WhatsApp */}
-          <a href="https://wa.me/2348154867419" target="_blank" rel="noopener noreferrer"
-            aria-label="Chat on WhatsApp"
-            className="w-10 h-10 rounded-full flex items-center justify-center border-2 border-[#25D366]/40 hover:border-[#25D366] hover:scale-110 transition-all duration-200"
-          >
-            <WhatsAppIcon className="w-[22px] h-[22px]" />
-          </a>
-
-          {/* CTA */}
-          <a href="https://cal.eu/dls-travel-consult-ox8fk5/travel" target="_blank" rel="noopener noreferrer"
-            className="relative inline-flex items-center px-5 py-2.5 rounded-full bg-[#0D7EFF] text-white text-sm font-semibold overflow-hidden group transition-all duration-300 hover:shadow-lg hover:shadow-[#0D7EFF]/30 hover:-translate-y-0.5"
-          >
-            <span className="absolute inset-0 bg-[#0055cc] translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-            <span className="relative z-10">Book Consultation</span>
-          </a>
         </div>
+
+        {/* WhatsApp — always visible on all screen sizes */}
+        <a href="https://wa.me/2348154867419" target="_blank" rel="noopener noreferrer"
+          aria-label="Chat on WhatsApp"
+          className="w-10 h-10 rounded-full flex items-center justify-center border-2 border-[#25D366]/40 hover:border-[#25D366] hover:scale-110 transition-all duration-200"
+        >
+          <WhatsAppIcon className="w-[22px] h-[22px]" />
+        </a>
 
         {/* Mobile toggle */}
         <button onClick={() => setMenuOpen(!menuOpen)}
@@ -419,11 +412,11 @@ export default function Navbar() {
               </select>
             </div>
 
-            <a href="https://cal.eu/dls-travel-consult-ox8fk5/travel" target="_blank" rel="noopener noreferrer"
+            <Link href="/consultation" onClick={() => setMenuOpen(false)}
               className="block text-center px-5 py-3 rounded-full bg-[#0D7EFF] text-white text-sm font-semibold hover:bg-[#0055cc] transition-colors"
             >
               Book Consultation
-            </a>
+            </Link>
           </div>
         </div>
       </div>

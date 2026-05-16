@@ -1,7 +1,7 @@
 import Footer from "@/app/components/layout/Footer";
 import Navbar from "@/app/components/layout/Navbar";
 import CTABanner from "@/app/components/sections/home/CTABanner";
-import LanguageTraining from "@/app/components/sections/programs/LangiaageTraining";
+import LanguageTraining from "@/app/components/sections/programs/LanguageTraining";
 import ProgramsDetail from "@/app/components/sections/programs/ProgramsDetails";
 import ProgramsHero from "@/app/components/sections/programs/ProgramsHero";
 import type { Metadata } from "next";
